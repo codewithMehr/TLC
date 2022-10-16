@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/fav.ico.png?" type="image/x-icon" />
+    <title>TLC</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-div">
+          <img src="img/logo.jpg" alt="" class="logo" />
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/paw6.png" alt="" />
+                <p>Training</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/paw6.png" alt="" />
+                <p>About us</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/paw6.png" alt="" />
+                <p>News Barkives</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/paw6.png" alt="" />
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="flex1">
+        <p>
+          TLC Training is focused on working with handlers that wish to train
+          their own dogs to become certified assistance dogs. The primary
+          trainer is the owner and we provide one-on-one training to help teams
+          achieve success on the Government of Alberta public access test for
+          certification.
+        </p>
+        <p>
+          At this time, TLC Training is servicing the Calgary, Alberta area.
+        </p>
+        <p>
+          At this time, TLC Training is servicing the Calgary, Alberta area. Our
+          target client at this time will already have a dog that has completed
+          basic obedience training at a minimum. We do not provide dogs, nor do
+          we provide classes for basic obedience. We would be happy to refer you
+          to excellent training facilities in the Calgary area.
+        </p>
+        <p>
+          Costs for services are dependent on current funding available from
+          government grants and/or client annual income.
+        </p>
+      </div>
+
+      <div class="flex2">
+        <img src="img/dog4.png" alt="" id="image" />
+      </div>
+    </div>
+
+    <script>
+      let image = document.getElementById("image");
+      let images = ["img/dog1.png", "img/dog2.png", "img/dog4.png"];
+      setInterval(function () {
+        let random = Math.floor(Math.random() * 3);
+        image.src = images[random];
+      }, 6000);
+    </script>
+  </body>
+</html>

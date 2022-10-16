@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: aliceblue url(img/Texture.png);
+  background-blend-mode: multiply;
+}
+header {
+  border-radius: 20px;
+  padding: 1%;
+  margin: 3%;
+  background-color: rgba(255, 255, 255, 0.916);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav li {
+  display: inline-block;
+  text-decoration: none;
+  padding-inline: 10px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 2px;
+  transition: all 60ms ease-in-out;
+}
+nav li a:hover {
+  color: rgb(83, 122, 153);
+  border-bottom: 1px solid rgb(83, 122, 153);
+}
+nav p {
+  display: inline-block;
+  text-transform: uppercase;
+ 
+}
+nav .logo-div {
+  width: 40%;
+}
+nav .logo {
+  width: 100%;
+  height: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 3%;
+  background-color: rgba(255, 255, 255, 0.785);
+}
+.flex1 {
+  width: 60%;
+}
+.flex2 {
+  width: 40%;
+  text-align: center;
+}
+.flex2 img {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+.container p {
+  padding: 2% 3%;
+  font-size: 1.5rem;
+}
+/* For Tablets */
+@media (max-width: 854px) {
+  .logo-div {
+    width: 30%;
+  }
+  .flex2 img {
+    width: 70%;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+  nav li {
+    padding-inline: 5px;
+  }
+}
+/* for phones */
+@media (max-width: 633px) {
+  nav .logo-div {
+    width: 70%;
+    padding-bottom: 2%;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container p {
+    padding: 2% 3%;
+    font-size: 1.3rem;
+  }
+  .flex1 {
+    width: 100%;
+  }
+  .flex2 {
+    width: 100%;
+  }
+}
